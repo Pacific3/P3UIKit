@@ -13,6 +13,7 @@
 		DF66140C1D145A0900BCD6AF /* HexColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */; };
 		DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */; };
 		DF6614101D145A3700BCD6AF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140F1D145A3700BCD6AF /* UIColor.swift */; };
+		DF6614121D14617800BCD6AF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614111D14617800BCD6AF /* UIImageView.swift */; };
 		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorConvertible.swift; sourceTree = "<group>"; };
 		DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConvertible.swift; sourceTree = "<group>"; };
 		DF66140F1D145A3700BCD6AF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		DF6614111D14617800BCD6AF /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		DFA7A0B61D14556300A6EED9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA7A0B71D14556300A6EED9 /* P3UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P3UIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			children = (
 				DF6614091D1459F300BCD6AF /* UIImage.swift */,
 				DF66140F1D145A3700BCD6AF /* UIColor.swift */,
+				DF6614111D14617800BCD6AF /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				DF66140A1D1459F300BCD6AF /* UIImage.swift in Sources */,
 				DF6614101D145A3700BCD6AF /* UIColor.swift in Sources */,
+				DF6614121D14617800BCD6AF /* UIImageView.swift in Sources */,
 				DF66140C1D145A0900BCD6AF /* HexColorConvertible.swift in Sources */,
 				DF6614071D14598F00BCD6AF /* ImageNameConvertible.swift in Sources */,
 				DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */,
