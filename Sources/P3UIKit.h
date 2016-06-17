@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <P3Foundation/P3Foundation.h>
+
 //! Project version number for P3UIKit.
 FOUNDATION_EXPORT double P3UIKitVersionNumber;
 

@@ -14,6 +14,8 @@
 		DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */; };
 		DF6614101D145A3700BCD6AF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140F1D145A3700BCD6AF /* UIColor.swift */; };
 		DF6614121D14617800BCD6AF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614111D14617800BCD6AF /* UIImageView.swift */; };
+		DF6614151D1461CD00BCD6AF /* P3AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */; };
+		DF6614181D1461FC00BCD6AF /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6614171D1461FC00BCD6AF /* P3Foundation.framework */; };
 		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConvertible.swift; sourceTree = "<group>"; };
 		DF66140F1D145A3700BCD6AF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DF6614111D14617800BCD6AF /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P3AlertOperation.swift; sourceTree = "<group>"; };
+		DF6614171D1461FC00BCD6AF /* P3Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = P3Foundation.framework; path = Carthage/Build/iOS/P3Foundation.framework; sourceTree = "<group>"; };
 		DFA7A0B61D14556300A6EED9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA7A0B71D14556300A6EED9 /* P3UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P3UIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6614181D1461FC00BCD6AF /* P3Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 			children = (
 				DF3002821D14520E00E5233E /* Sources */,
 				DF3002811D14520E00E5233E /* Products */,
+				DF6614161D1461FC00BCD6AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +66,7 @@
 		DF3002821D14520E00E5233E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DF6614131D1461B400BCD6AF /* Operations */,
 				DF6614081D1459E500BCD6AF /* Extensions */,
 				DF6614031D14594B00BCD6AF /* Protocols */,
 				DFA7A0B61D14556300A6EED9 /* Info.plist */,
@@ -87,6 +94,22 @@
 				DF6614111D14617800BCD6AF /* UIImageView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF6614131D1461B400BCD6AF /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		DF6614161D1461FC00BCD6AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF6614171D1461FC00BCD6AF /* P3Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +199,7 @@
 				DF6614121D14617800BCD6AF /* UIImageView.swift in Sources */,
 				DF66140C1D145A0900BCD6AF /* HexColorConvertible.swift in Sources */,
 				DF6614071D14598F00BCD6AF /* ImageNameConvertible.swift in Sources */,
+				DF6614151D1461CD00BCD6AF /* P3AlertOperation.swift in Sources */,
 				DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */,
 				DF6614051D14596300BCD6AF /* ImageConvertible.swift in Sources */,
 			);
@@ -287,6 +311,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -306,6 +334,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
