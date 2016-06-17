@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; };
+		DF6614051D14596300BCD6AF /* ImageConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614041D14596300BCD6AF /* ImageConvertible.swift */; };
+		DF6614071D14598F00BCD6AF /* ImageNameConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */; };
+		DF66140A1D1459F300BCD6AF /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
+		DF66140C1D145A0900BCD6AF /* HexColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */; };
+		DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */; };
+		DF6614101D145A3700BCD6AF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140F1D145A3700BCD6AF /* UIColor.swift */; };
+		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6614041D14596300BCD6AF /* ImageConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageConvertible.swift; sourceTree = "<group>"; };
+		DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNameConvertible.swift; sourceTree = "<group>"; };
+		DF6614091D1459F300BCD6AF /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorConvertible.swift; sourceTree = "<group>"; };
+		DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConvertible.swift; sourceTree = "<group>"; };
+		DF66140F1D145A3700BCD6AF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DFA7A0B61D14556300A6EED9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA7A0B71D14556300A6EED9 /* P3UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P3UIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,10 +58,32 @@
 		DF3002821D14520E00E5233E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DF6614081D1459E500BCD6AF /* Extensions */,
+				DF6614031D14594B00BCD6AF /* Protocols */,
 				DFA7A0B61D14556300A6EED9 /* Info.plist */,
 				DFA7A0B71D14556300A6EED9 /* P3UIKit.h */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		DF6614031D14594B00BCD6AF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF6614041D14596300BCD6AF /* ImageConvertible.swift */,
+				DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */,
+				DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */,
+				DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DF6614081D1459E500BCD6AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF6614091D1459F300BCD6AF /* UIImage.swift */,
+				DF66140F1D145A3700BCD6AF /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +131,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3BVQ3MVDQR;
 						DevelopmentTeamName = "OSCAR  CISNEROS LARIOS";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -133,6 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF66140A1D1459F300BCD6AF /* UIImage.swift in Sources */,
+				DF6614101D145A3700BCD6AF /* UIColor.swift in Sources */,
+				DF66140C1D145A0900BCD6AF /* HexColorConvertible.swift in Sources */,
+				DF6614071D14598F00BCD6AF /* ImageNameConvertible.swift in Sources */,
+				DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */,
+				DF6614051D14596300BCD6AF /* ImageConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +278,7 @@
 		DF3002891D14520E00E5233E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -247,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.Pacific3.P3UIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -254,6 +297,7 @@
 		DF30028A1D14520E00E5233E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
