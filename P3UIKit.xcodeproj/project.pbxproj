@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF3002841D14520E00E5233E /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3002831D14520E00E5233E /* P3UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF3002831D14520E00E5233E /* P3UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P3UIKit.h; sourceTree = "<group>"; };
-		DF3002851D14520E00E5233E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA7A0B61D14556300A6EED9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA7A0B71D14556300A6EED9 /* P3UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P3UIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +30,7 @@
 		DF3002761D14520E00E5233E = {
 			isa = PBXGroup;
 			children = (
-				DF3002821D14520E00E5233E /* P3UIKit */,
+				DF3002821D14520E00E5233E /* Sources */,
 				DF3002811D14520E00E5233E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,13 +43,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF3002821D14520E00E5233E /* P3UIKit */ = {
+		DF3002821D14520E00E5233E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DF3002831D14520E00E5233E /* P3UIKit.h */,
-				DF3002851D14520E00E5233E /* Info.plist */,
+				DFA7A0B61D14556300A6EED9 /* Info.plist */,
+				DFA7A0B71D14556300A6EED9 /* P3UIKit.h */,
 			);
-			path = P3UIKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +59,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3002841D14520E00E5233E /* P3UIKit.h in Headers */,
+				DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +241,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = P3UIKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.Pacific3.P3UIKit;
@@ -258,7 +258,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = P3UIKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.Pacific3.P3UIKit;
@@ -287,6 +287,7 @@
 				DF30028A1D14520E00E5233E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
