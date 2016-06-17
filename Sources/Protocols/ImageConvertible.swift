@@ -12,6 +12,6 @@ public protocol ImageConvertible: ImageNameConvertible {
 
 extension ImageConvertible {
     public func image() -> UIImage? {
-        return UIImage.p_fromImageNameConvertible(imageNameConvertible: self)
+        return UIImage.p3_fromImageNameConvertible(imageNameConvertible: self)
     }
 }

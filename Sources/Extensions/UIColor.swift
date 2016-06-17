@@ -7,11 +7,11 @@
 //
 
 extension UIColor {
-    public class func p_fromHexColorConvertible<C: HexColorConvertible>(hexColorConvertible: C) -> UIColor {
-        return UIColor(p_hex: hexColorConvertible.hexColor)
+    public class func p3_fromHexColorConvertible<C: HexColorConvertible>(hexColorConvertible: C) -> UIColor {
+        return UIColor(p3_hex: hexColorConvertible.hexColor)
     }
     
-    public convenience init(p_hex hex: String) {
+    public convenience init(p3_hex hex: String) {
         var red:   CGFloat = 0.0
         var green: CGFloat = 0.0
         var blue:  CGFloat = 0.0

@@ -7,8 +7,7 @@
 //
 
 extension UIImageView {
-    public func p_setImage<I: ImageConvertible>(image: I) {
+    public func p3_setImage<I: ImageConvertible>(image: I) {
         self.image = image.image()
     }
 }
-
