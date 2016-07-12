@@ -37,7 +37,7 @@ private class NetworkIndicatorManager {
     private var visibilityTimer: Timer?
     
     func networkActivityDidStart() {
-        assert(Thread.isMainThread(), "Only on main thread!")
+        assert(Thread.isMainThread, "Only on main thread!")
         
         activiyCount += 1
         
@@ -45,7 +45,7 @@ private class NetworkIndicatorManager {
     }
     
     func networkActivityDidEnd() {
-        assert(Thread.isMainThread(), "Only on main thread!")
+        assert(Thread.isMainThread, "Only on main thread!")
         
         activiyCount -= 1
         
