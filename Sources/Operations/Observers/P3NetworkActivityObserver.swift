@@ -6,7 +6,7 @@
 //  Copyright © 2016 Pacific3. All rights reserved.
 //
 
-public struct NetworkActivityObserver: P3OperationObserver {
+public struct P3NetworkActivityObserver: P3OperationObserver {
     public init() { }
     
     public func operationDidStart(operation: Operation) {

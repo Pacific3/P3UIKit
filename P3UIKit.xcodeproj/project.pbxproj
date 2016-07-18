@@ -18,6 +18,8 @@
 		DF6614181D1461FC00BCD6AF /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6614171D1461FC00BCD6AF /* P3Foundation.framework */; };
 		DF66141B1D1464D300BCD6AF /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
 		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFF93FA31D347965004E83B8 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA21D347965004E83B8 /* UICollectionView.swift */; };
+		DFF93FA51D347AB7004E83B8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA41D347AB7004E83B8 /* UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P3NetworkActivityObserver.swift; sourceTree = "<group>"; };
 		DFA7A0B61D14556300A6EED9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA7A0B71D14556300A6EED9 /* P3UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P3UIKit.h; sourceTree = "<group>"; };
+		DFF93FA21D347965004E83B8 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		DFF93FA41D347AB7004E83B8 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				DF6614091D1459F300BCD6AF /* UIImage.swift */,
 				DF66140F1D145A3700BCD6AF /* UIColor.swift */,
 				DF6614111D14617800BCD6AF /* UIImageView.swift */,
+				DFF93FA21D347965004E83B8 /* UICollectionView.swift */,
+				DFF93FA41D347AB7004E83B8 /* UITableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,12 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF93FA31D347965004E83B8 /* UICollectionView.swift in Sources */,
 				DF66140A1D1459F300BCD6AF /* UIImage.swift in Sources */,
 				DF6614101D145A3700BCD6AF /* UIColor.swift in Sources */,
 				DF6614121D14617800BCD6AF /* UIImageView.swift in Sources */,
 				DF66140C1D145A0900BCD6AF /* HexColorConvertible.swift in Sources */,
 				DF66141B1D1464D300BCD6AF /* P3NetworkActivityObserver.swift in Sources */,
 				DF6614071D14598F00BCD6AF /* ImageNameConvertible.swift in Sources */,
+				DFF93FA51D347AB7004E83B8 /* UITableView.swift in Sources */,
 				DF6614151D1461CD00BCD6AF /* P3AlertOperation.swift in Sources */,
 				DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */,
 				DF6614051D14596300BCD6AF /* ImageConvertible.swift in Sources */,
