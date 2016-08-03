@@ -31,7 +31,7 @@ public final class P3AlertOperation: P3Operation {
     }
     
     public init(presentationContext: UIViewController? = nil) {
-        self.presentationContext = presentationContext ?? UIApplication.shared().keyWindow?.rootViewController
+        self.presentationContext = presentationContext ?? UIApplication.shared.keyWindow?.rootViewController
         super.init()
         addCondition(condition: AlertPresentation())
         addCondition(condition: P3MutuallyExclusiveOperationCondition<UIViewController>())

@@ -66,13 +66,13 @@ private class NetworkIndicatorManager {
     private func showIndicator() {
         visibilityTimer?.cancel()
         visibilityTimer = nil
-        UIApplication.shared().isNetworkActivityIndicatorVisible = true
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
     
     private func hideIndicator() {
         visibilityTimer?.cancel()
         visibilityTimer = nil
-        UIApplication.shared().isNetworkActivityIndicatorVisible = false
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 }
 
@@ -81,7 +81,7 @@ private class Timer {
     
     init(interval: TimeInterval, handler: (Void) -> Void) {
         let when = DispatchTime.now() + (Double(NSEC_PER_SEC) * interval)
-        DispatchQueue.main.after(when: when) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: when) { [weak self] in
             if self?.isCancelled == false {
                 handler()
             }
