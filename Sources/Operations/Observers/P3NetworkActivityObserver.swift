@@ -56,7 +56,6 @@ private class NetworkIndicatorManager {
         if activiyCount > 0 {
             showIndicator()
         } else {
-            
             visibilityTimer = Timer(interval: 1.0) {
                 self.hideIndicator()
             }
@@ -80,7 +79,7 @@ private class Timer {
     var isCancelled = false
     
     init(interval: TimeInterval, handler: (Void) -> Void) {
-        let when = DispatchTime.now() + (Double(NSEC_PER_SEC) * interval)
+        let when = DispatchTime.now() + interval
         DispatchQueue.main.asyncAfter(deadline: when) { [weak self] in
             if self?.isCancelled == false {
                 handler()
