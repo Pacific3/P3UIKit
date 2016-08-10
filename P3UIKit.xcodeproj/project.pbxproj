@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF561FEE1D5B948800A0556E /* P3FoundationTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF561FED1D5B948800A0556E /* P3FoundationTV.framework */; };
+		DF561FEF1D5B949C00A0556E /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
+		DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */; };
+		DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
+		DF561FF21D5B949C00A0556E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140F1D145A3700BCD6AF /* UIColor.swift */; };
+		DF561FF31D5B949C00A0556E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614111D14617800BCD6AF /* UIImageView.swift */; };
+		DF561FF41D5B949C00A0556E /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA21D347965004E83B8 /* UICollectionView.swift */; };
+		DF561FF51D5B949C00A0556E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA41D347AB7004E83B8 /* UITableView.swift */; };
+		DF561FF61D5B949C00A0556E /* ImageConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614041D14596300BCD6AF /* ImageConvertible.swift */; };
+		DF561FF71D5B949C00A0556E /* HexColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */; };
+		DF561FF81D5B949C00A0556E /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */; };
+		DF561FF91D5B949C00A0556E /* ImageNameConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */; };
 		DF6614051D14596300BCD6AF /* ImageConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614041D14596300BCD6AF /* ImageConvertible.swift */; };
 		DF6614071D14598F00BCD6AF /* ImageNameConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */; };
 		DF66140A1D1459F300BCD6AF /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
@@ -25,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF561FED1D5B948800A0556E /* P3FoundationTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = P3FoundationTV.framework; path = Carthage/Build/tvOS/P3FoundationTV.framework; sourceTree = "<group>"; };
 		DF6614041D14596300BCD6AF /* ImageConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ImageConvertible.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNameConvertible.swift; sourceTree = "<group>"; };
 		DF6614091D1459F300BCD6AF /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIImage.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -57,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF561FEE1D5B948800A0556E /* P3FoundationTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +143,7 @@
 		DF6614161D1461FC00BCD6AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF561FED1D5B948800A0556E /* P3FoundationTV.framework */,
 				DF6614171D1461FC00BCD6AF /* P3Foundation.framework */,
 			);
 			name = Frameworks;
@@ -290,6 +305,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF561FEF1D5B949C00A0556E /* P3NetworkActivityObserver.swift in Sources */,
+				DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */,
+				DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */,
+				DF561FF21D5B949C00A0556E /* UIColor.swift in Sources */,
+				DF561FF31D5B949C00A0556E /* UIImageView.swift in Sources */,
+				DF561FF41D5B949C00A0556E /* UICollectionView.swift in Sources */,
+				DF561FF51D5B949C00A0556E /* UITableView.swift in Sources */,
+				DF561FF61D5B949C00A0556E /* ImageConvertible.swift in Sources */,
+				DF561FF71D5B949C00A0556E /* HexColorConvertible.swift in Sources */,
+				DF561FF81D5B949C00A0556E /* ColorConvertible.swift in Sources */,
+				DF561FF91D5B949C00A0556E /* ImageNameConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +475,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = P3UIKitTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -473,6 +503,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = P3UIKitTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -514,6 +548,7 @@
 				DFF2A35A1D5B935D003493C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
