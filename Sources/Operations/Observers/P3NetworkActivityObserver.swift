@@ -6,6 +6,7 @@
 //  Copyright © 2016 Pacific3. All rights reserved.
 //
 
+#if os(iOS)
 public struct P3NetworkActivityObserver: P3OperationObserver {
     public init() { }
     
@@ -92,4 +93,6 @@ private class Timer {
         isCancelled = true
     }
 }
+
+#endif
 

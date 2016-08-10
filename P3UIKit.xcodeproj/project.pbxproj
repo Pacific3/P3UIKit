@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF561FEE1D5B948800A0556E /* P3FoundationTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF561FED1D5B948800A0556E /* P3FoundationTV.framework */; };
+		DF561FEF1D5B949C00A0556E /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
+		DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */; };
+		DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
+		DF561FF21D5B949C00A0556E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140F1D145A3700BCD6AF /* UIColor.swift */; };
+		DF561FF31D5B949C00A0556E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614111D14617800BCD6AF /* UIImageView.swift */; };
+		DF561FF41D5B949C00A0556E /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA21D347965004E83B8 /* UICollectionView.swift */; };
+		DF561FF51D5B949C00A0556E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA41D347AB7004E83B8 /* UITableView.swift */; };
+		DF561FF61D5B949C00A0556E /* ImageConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614041D14596300BCD6AF /* ImageConvertible.swift */; };
+		DF561FF71D5B949C00A0556E /* HexColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */; };
+		DF561FF81D5B949C00A0556E /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */; };
+		DF561FF91D5B949C00A0556E /* ImageNameConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */; };
 		DF6614051D14596300BCD6AF /* ImageConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614041D14596300BCD6AF /* ImageConvertible.swift */; };
 		DF6614071D14598F00BCD6AF /* ImageNameConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */; };
 		DF66140A1D1459F300BCD6AF /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
@@ -18,12 +30,14 @@
 		DF6614181D1461FC00BCD6AF /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6614171D1461FC00BCD6AF /* P3Foundation.framework */; };
 		DF66141B1D1464D300BCD6AF /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
 		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFF2A3581D5B935D003493C6 /* P3UIKitTV.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF2A3561D5B935D003493C6 /* P3UIKitTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFF93FA31D347965004E83B8 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA21D347965004E83B8 /* UICollectionView.swift */; };
 		DFF93FA51D347AB7004E83B8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA41D347AB7004E83B8 /* UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF561FED1D5B948800A0556E /* P3FoundationTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = P3FoundationTV.framework; path = Carthage/Build/tvOS/P3FoundationTV.framework; sourceTree = "<group>"; };
 		DF6614041D14596300BCD6AF /* ImageConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ImageConvertible.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNameConvertible.swift; sourceTree = "<group>"; };
 		DF6614091D1459F300BCD6AF /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIImage.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -36,6 +50,9 @@
 		DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P3NetworkActivityObserver.swift; sourceTree = "<group>"; };
 		DFA7A0B61D14556300A6EED9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA7A0B71D14556300A6EED9 /* P3UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P3UIKit.h; sourceTree = "<group>"; };
+		DFF2A3541D5B935D003493C6 /* P3UIKitTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKitTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF2A3561D5B935D003493C6 /* P3UIKitTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P3UIKitTV.h; sourceTree = "<group>"; };
+		DFF2A3571D5B935D003493C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF93FA21D347965004E83B8 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		DFF93FA41D347AB7004E83B8 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +66,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFF2A3501D5B935D003493C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF561FEE1D5B948800A0556E /* P3FoundationTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DF3002821D14520E00E5233E /* Sources */,
+				DFF2A3551D5B935D003493C6 /* P3UIKitTV */,
 				DF3002811D14520E00E5233E /* Products */,
 				DF6614161D1461FC00BCD6AF /* Frameworks */,
 			);
@@ -65,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				DF3002801D14520E00E5233E /* P3UIKit.framework */,
+				DFF2A3541D5B935D003493C6 /* P3UIKitTV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +143,7 @@
 		DF6614161D1461FC00BCD6AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF561FED1D5B948800A0556E /* P3FoundationTV.framework */,
 				DF6614171D1461FC00BCD6AF /* P3Foundation.framework */,
 			);
 			name = Frameworks;
@@ -129,6 +157,15 @@
 			path = Observers;
 			sourceTree = "<group>";
 		};
+		DFF2A3551D5B935D003493C6 /* P3UIKitTV */ = {
+			isa = PBXGroup;
+			children = (
+				DFF2A3561D5B935D003493C6 /* P3UIKitTV.h */,
+				DFF2A3571D5B935D003493C6 /* Info.plist */,
+			);
+			path = P3UIKitTV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -137,6 +174,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF2A3511D5B935D003493C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF2A3581D5B935D003493C6 /* P3UIKitTV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +206,24 @@
 			productReference = DF3002801D14520E00E5233E /* P3UIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DFF2A3531D5B935D003493C6 /* P3UIKitTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF2A35B1D5B935D003493C6 /* Build configuration list for PBXNativeTarget "P3UIKitTV" */;
+			buildPhases = (
+				DFF2A34F1D5B935D003493C6 /* Sources */,
+				DFF2A3501D5B935D003493C6 /* Frameworks */,
+				DFF2A3511D5B935D003493C6 /* Headers */,
+				DFF2A3521D5B935D003493C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = P3UIKitTV;
+			productName = P3UIKitTV;
+			productReference = DFF2A3541D5B935D003493C6 /* P3UIKitTV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +238,11 @@
 						DevelopmentTeam = 3BVQ3MVDQR;
 						DevelopmentTeamName = "OSCAR  CISNEROS LARIOS";
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					DFF2A3531D5B935D003493C6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3BVQ3MVDQR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -192,12 +260,20 @@
 			projectRoot = "";
 			targets = (
 				DF30027F1D14520E00E5233E /* P3UIKit */,
+				DFF2A3531D5B935D003493C6 /* P3UIKitTV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DF30027E1D14520E00E5233E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF2A3521D5B935D003493C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,6 +298,24 @@
 				DF6614151D1461CD00BCD6AF /* P3AlertOperation.swift in Sources */,
 				DF66140E1D145A1F00BCD6AF /* ColorConvertible.swift in Sources */,
 				DF6614051D14596300BCD6AF /* ImageConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF2A34F1D5B935D003493C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF561FEF1D5B949C00A0556E /* P3NetworkActivityObserver.swift in Sources */,
+				DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */,
+				DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */,
+				DF561FF21D5B949C00A0556E /* UIColor.swift in Sources */,
+				DF561FF31D5B949C00A0556E /* UIImageView.swift in Sources */,
+				DF561FF41D5B949C00A0556E /* UICollectionView.swift in Sources */,
+				DF561FF51D5B949C00A0556E /* UITableView.swift in Sources */,
+				DF561FF61D5B949C00A0556E /* ImageConvertible.swift in Sources */,
+				DF561FF71D5B949C00A0556E /* HexColorConvertible.swift in Sources */,
+				DF561FF81D5B949C00A0556E /* ColorConvertible.swift in Sources */,
+				DF561FF91D5B949C00A0556E /* ImageNameConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +464,62 @@
 			};
 			name = Release;
 		};
+		DFF2A3591D5B935D003493C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BVQ3MVDQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = P3UIKitTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Pacific3.P3UIKitTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		DFF2A35A1D5B935D003493C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BVQ3MVDQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = P3UIKitTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Pacific3.P3UIKitTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -387,6 +537,15 @@
 			buildConfigurations = (
 				DF3002891D14520E00E5233E /* Debug */,
 				DF30028A1D14520E00E5233E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF2A35B1D5B935D003493C6 /* Build configuration list for PBXNativeTarget "P3UIKitTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF2A3591D5B935D003493C6 /* Debug */,
+				DFF2A35A1D5B935D003493C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
