@@ -16,6 +16,6 @@ public extension UICollectionView {
     }
     
     private static func reuseIdentifier<T: UICollectionViewCell>(class _class: T.Type) -> String {
-        return (Bundle(for: _class).bundleIdentifier ?? "_P3BundleIdentifier") + String(_class)
+        return (Bundle(for: _class).bundleIdentifier ?? "_P3BundleIdentifier") + String(describing: _class)
     }
 }

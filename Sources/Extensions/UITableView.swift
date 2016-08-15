@@ -16,6 +16,6 @@ public extension UITableView {
     }
     
     private static func reuseIdentifier<T: UITableViewCell>(class _class: T.Type) -> String {
-        return (Bundle(for: _class).bundleIdentifier ?? "_P3BundleIdentifier") + String(_class)
+        return (Bundle(for: _class).bundleIdentifier ?? "_P3BundleIdentifier") + String(describing: _class)
     }
 }
