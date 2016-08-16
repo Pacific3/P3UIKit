@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF561FEE1D5B948800A0556E /* P3FoundationTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF561FED1D5B948800A0556E /* P3FoundationTV.framework */; };
 		DF561FEF1D5B949C00A0556E /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
 		DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */; };
 		DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
@@ -30,6 +29,7 @@
 		DF6614181D1461FC00BCD6AF /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6614171D1461FC00BCD6AF /* P3Foundation.framework */; };
 		DF66141B1D1464D300BCD6AF /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
 		DFA7A0B91D14556300A6EED9 /* P3UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA7A0B71D14556300A6EED9 /* P3UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFB469D11D62C2C700585D24 /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6614171D1461FC00BCD6AF /* P3Foundation.framework */; };
 		DFF2A3581D5B935D003493C6 /* P3UIKitTV.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF2A3561D5B935D003493C6 /* P3UIKitTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFF93FA31D347965004E83B8 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA21D347965004E83B8 /* UICollectionView.swift */; };
 		DFF93FA51D347AB7004E83B8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA41D347AB7004E83B8 /* UITableView.swift */; };
@@ -37,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF561FED1D5B948800A0556E /* P3FoundationTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = P3FoundationTV.framework; path = Carthage/Build/tvOS/P3FoundationTV.framework; sourceTree = "<group>"; };
 		DF6614041D14596300BCD6AF /* ImageConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ImageConvertible.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNameConvertible.swift; sourceTree = "<group>"; };
 		DF6614091D1459F300BCD6AF /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIImage.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -70,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF561FEE1D5B948800A0556E /* P3FoundationTV.framework in Frameworks */,
+				DFB469D11D62C2C700585D24 /* P3Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +142,6 @@
 		DF6614161D1461FC00BCD6AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF561FED1D5B948800A0556E /* P3FoundationTV.framework */,
 				DF6614171D1461FC00BCD6AF /* P3Foundation.framework */,
 			);
 			name = Frameworks;
@@ -478,6 +476,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = P3UIKitTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -506,6 +505,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = P3UIKitTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

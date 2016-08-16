@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <P3FoundationTV/P3FoundationTV.h>
+#import <P3Foundation/P3Foundation.h>
 
 
 //! Project version number for P3UIKitTV.
