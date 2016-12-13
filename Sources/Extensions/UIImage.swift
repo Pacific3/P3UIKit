@@ -6,7 +6,7 @@
 //  Copyright © 2016 Pacific3. All rights reserved.
 //
 
-extension UIImage {
+public extension UIImage {
     public class func p3_fromImageNameConvertible<I: ImageNameConvertible>(imageNameConvertible: I) -> UIImage? {
         return UIImage(
             named: imageNameConvertible.imageName,
