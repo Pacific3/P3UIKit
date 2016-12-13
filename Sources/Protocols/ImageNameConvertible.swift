@@ -11,7 +11,7 @@ public protocol ImageNameConvertible: Hashable {
     var bundle: Bundle { get }
 }
 
-extension ImageNameConvertible {
+public extension ImageNameConvertible {
     public var hashValue: Int {
         return imageName.hashValue
     }

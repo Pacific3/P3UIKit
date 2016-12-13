@@ -10,7 +10,7 @@ public protocol HexColorConvertible: Hashable {
     var hexColor: String { get }
 }
 
-extension HexColorConvertible {
+public extension HexColorConvertible {
     public var hashValue: Int {
         return hexColor.hashValue
     }

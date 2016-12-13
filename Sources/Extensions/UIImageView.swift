@@ -6,7 +6,7 @@
 //  Copyright © 2016 Pacific3. All rights reserved.
 //
 
-extension UIImageView {
+public extension UIImageView {
     public func p3_setImage<I: ImageConvertible>(image: I) {
         self.image = image.image()
     }

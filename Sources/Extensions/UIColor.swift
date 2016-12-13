@@ -6,7 +6,7 @@
 //  Copyright © 2016 Pacific3. All rights reserved.
 //
 
-extension UIColor {
+public extension UIColor {
     public class func p3_fromHexColorConvertible<C: HexColorConvertible>(hexColorConvertible: C) -> UIColor {
         return UIColor(p3_hex: hexColorConvertible.hexColor)
     }

@@ -10,7 +10,7 @@ public protocol ColorConvertible: HexColorConvertible {
     func color() -> UIColor
 }
 
-extension ColorConvertible {
+public extension ColorConvertible {
     public func color() -> UIColor {
         return UIColor.p3_fromHexColorConvertible(hexColorConvertible: self)
     }
