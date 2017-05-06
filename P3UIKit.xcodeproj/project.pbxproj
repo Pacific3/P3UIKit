@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF4F24921EBE7A0A00AB8FA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */; };
+		DF4F24931EBE7A1F00AB8FA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */; };
 		DF561FEF1D5B949C00A0556E /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
 		DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */; };
 		DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
@@ -37,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		DF6614041D14596300BCD6AF /* ImageConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ImageConvertible.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNameConvertible.swift; sourceTree = "<group>"; };
 		DF6614091D1459F300BCD6AF /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIImage.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -126,6 +129,7 @@
 				DF6614111D14617800BCD6AF /* UIImageView.swift */,
 				DFF93FA21D347965004E83B8 /* UICollectionView.swift */,
 				DFF93FA41D347AB7004E83B8 /* UITableView.swift */,
+				DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +292,7 @@
 				DF7563081E00B3F10026252D /* P3AlertOperation.swift in Sources */,
 				DF7563091E00B3F10026252D /* UIImage.swift in Sources */,
 				DF75630A1E00B3F10026252D /* UIColor.swift in Sources */,
+				DF4F24921EBE7A0A00AB8FA7 /* UIView.swift in Sources */,
 				DF75630B1E00B3F10026252D /* UIImageView.swift in Sources */,
 				DF75630C1E00B3F10026252D /* UICollectionView.swift in Sources */,
 				DF75630D1E00B3F10026252D /* UITableView.swift in Sources */,
@@ -306,6 +311,7 @@
 				DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */,
 				DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */,
 				DF561FF21D5B949C00A0556E /* UIColor.swift in Sources */,
+				DF4F24931EBE7A1F00AB8FA7 /* UIView.swift in Sources */,
 				DF561FF31D5B949C00A0556E /* UIImageView.swift in Sources */,
 				DF561FF41D5B949C00A0556E /* UICollectionView.swift in Sources */,
 				DF561FF51D5B949C00A0556E /* UITableView.swift in Sources */,
