@@ -6,16 +6,26 @@
 //  Copyright © 2016 Pacific3. All rights reserved.
 //
 
-public extension UIColor {
-    private static var _colorCache: [String:UIColor] = [:]
+#if os(iOS) || os(tvOS)
+    public typealias P3Color = UIColor
+#else
+    public typealias P3Color = NSColor
+#endif
+
+public extension P3Color {
+    private static var _colorCache: [String:P3Color] = [:]
     
-    public class func p3_fromHexColorConvertible<C: HexColorConvertible>(hexColorConvertible: C) -> UIColor {
-        return UIColor(p3_hex: hexColorConvertible.hexColor)
+    public class func p3_fromHexColorConvertible<C: HexColorConvertible>(hexColorConvertible: C) -> P3Color {
+        return P3Color(p3_hex: hexColorConvertible.hexColor)
     }
     
     public convenience init(p3_hex hex: String) {
-        if let c = UIColor._colorCache[hex] {
-            self.init(cgColor: c.cgColor)
+        if let c = P3Color._colorCache[hex] {
+            #if os(iOS) || os(tvOS)
+                self.init(cgColor: c.cgColor)
+            #else
+                self.init(calibratedRed: c.redComponent, green: c.greenComponent, blue: c.blueComponent, alpha: c.alphaComponent)
+            #endif
         } else {
             var red:   CGFloat = 0.0
             var green: CGFloat = 0.0
@@ -57,10 +67,27 @@ public extension UIColor {
                 print("Invalid HEX string, missing '#' as prefix")
             }
             
-            let color = UIColor(red: red, green: green, blue: blue, alpha: alpha)
-            UIColor._colorCache[hex] = color
-            
-            self.init(red:red, green:green, blue:blue, alpha:alpha)
+            #if os(iOS) || os(tvOS)
+                let color = P3Color(red: red, green: green, blue: blue, alpha: alpha)
+                P3Color._colorCache[hex] = color
+                
+                self.init(cgColor: color.cgColor)
+            #else
+                let color = P3Color(
+                    calibratedRed: red, 
+                    green: green, 
+                    blue: blue, 
+                    alpha: alpha
+                )
+                P3Color._colorCache[hex] = color
+                
+                self.init(
+                    calibratedRed: color.redComponent, 
+                    green: color.greenComponent, 
+                    blue: color.blueComponent, 
+                    alpha: color.alphaComponent
+                )
+            #endif
         }
     }
 }

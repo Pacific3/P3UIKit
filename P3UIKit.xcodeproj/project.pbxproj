@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		DF4F24921EBE7A0A00AB8FA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */; };
 		DF4F24931EBE7A1F00AB8FA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */; };
+		DF5342571ECBA9AC00E83B55 /* P3UIKitMac.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5342551ECBA9AC00E83B55 /* P3UIKitMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF53425C1ECBA9DA00E83B55 /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
+		DF53425D1ECBA9DA00E83B55 /* P3AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */; };
+		DF53425E1ECBA9DA00E83B55 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
+		DF53425F1ECBA9DA00E83B55 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140F1D145A3700BCD6AF /* UIColor.swift */; };
+		DF5342601ECBA9DA00E83B55 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614111D14617800BCD6AF /* UIImageView.swift */; };
+		DF5342611ECBA9DA00E83B55 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA21D347965004E83B8 /* UICollectionView.swift */; };
+		DF5342621ECBA9DA00E83B55 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF93FA41D347AB7004E83B8 /* UITableView.swift */; };
+		DF5342631ECBA9DA00E83B55 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */; };
+		DF5342641ECBA9DA00E83B55 /* ImageConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614041D14596300BCD6AF /* ImageConvertible.swift */; };
+		DF5342651ECBA9DA00E83B55 /* HexColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140B1D145A0900BCD6AF /* HexColorConvertible.swift */; };
+		DF5342661ECBA9DA00E83B55 /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66140D1D145A1F00BCD6AF /* ColorConvertible.swift */; };
+		DF5342671ECBA9DA00E83B55 /* ImageNameConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */; };
+		DF53426D1ECBB05D00E83B55 /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5342691ECBB00000E83B55 /* P3Foundation.framework */; };
 		DF561FEF1D5B949C00A0556E /* P3NetworkActivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF66141A1D1464D300BCD6AF /* P3NetworkActivityObserver.swift */; };
 		DF561FF01D5B949C00A0556E /* P3AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614141D1461CD00BCD6AF /* P3AlertOperation.swift */; };
 		DF561FF11D5B949C00A0556E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6614091D1459F300BCD6AF /* UIImage.swift */; };
@@ -40,6 +54,10 @@
 /* Begin PBXFileReference section */
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DF5342531ECBA9AC00E83B55 /* P3UIKitMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKitMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5342551ECBA9AC00E83B55 /* P3UIKitMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P3UIKitMac.h; sourceTree = "<group>"; };
+		DF5342561ECBA9AC00E83B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF5342691ECBB00000E83B55 /* P3Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = P3Foundation.framework; path = Carthage/Build/Mac/P3Foundation.framework; sourceTree = "<group>"; };
 		DF6614041D14596300BCD6AF /* ImageConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ImageConvertible.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF6614061D14598F00BCD6AF /* ImageNameConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNameConvertible.swift; sourceTree = "<group>"; };
 		DF6614091D1459F300BCD6AF /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UIImage.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -68,6 +86,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF53424F1ECBA9AC00E83B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF53426D1ECBB05D00E83B55 /* P3Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF2A3501D5B935D003493C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +110,7 @@
 			children = (
 				DF3002821D14520E00E5233E /* Sources */,
 				DFF2A3551D5B935D003493C6 /* P3UIKitTV */,
+				DF5342541ECBA9AC00E83B55 /* P3UIKitMac */,
 				DF3002811D14520E00E5233E /* Products */,
 				DF6614161D1461FC00BCD6AF /* Frameworks */,
 			);
@@ -94,6 +121,7 @@
 			children = (
 				DF3002801D14520E00E5233E /* P3UIKit.framework */,
 				DFF2A3541D5B935D003493C6 /* P3UIKitTV.framework */,
+				DF5342531ECBA9AC00E83B55 /* P3UIKitMac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +136,15 @@
 				DFA7A0B71D14556300A6EED9 /* P3UIKit.h */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		DF5342541ECBA9AC00E83B55 /* P3UIKitMac */ = {
+			isa = PBXGroup;
+			children = (
+				DF5342551ECBA9AC00E83B55 /* P3UIKitMac.h */,
+				DF5342561ECBA9AC00E83B55 /* Info.plist */,
+			);
+			path = P3UIKitMac;
 			sourceTree = "<group>";
 		};
 		DF6614031D14594B00BCD6AF /* Protocols */ = {
@@ -146,6 +183,7 @@
 		DF6614161D1461FC00BCD6AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF5342691ECBB00000E83B55 /* P3Foundation.framework */,
 				DF6614171D1461FC00BCD6AF /* P3Foundation.framework */,
 			);
 			name = Frameworks;
@@ -179,6 +217,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF5342501ECBA9AC00E83B55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5342571ECBA9AC00E83B55 /* P3UIKitMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF2A3511D5B935D003493C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +252,24 @@
 			name = P3UIKit;
 			productName = P3UIKit;
 			productReference = DF3002801D14520E00E5233E /* P3UIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF5342521ECBA9AC00E83B55 /* P3UIKitMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF53425A1ECBA9AC00E83B55 /* Build configuration list for PBXNativeTarget "P3UIKitMac" */;
+			buildPhases = (
+				DF53424E1ECBA9AC00E83B55 /* Sources */,
+				DF53424F1ECBA9AC00E83B55 /* Frameworks */,
+				DF5342501ECBA9AC00E83B55 /* Headers */,
+				DF5342511ECBA9AC00E83B55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = P3UIKitMac;
+			productName = P3UIKitMac;
+			productReference = DF5342531ECBA9AC00E83B55 /* P3UIKitMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DFF2A3531D5B935D003493C6 /* P3UIKitTV */ = {
@@ -241,6 +305,11 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
+					DF5342521ECBA9AC00E83B55 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3BVQ3MVDQR;
+						ProvisioningStyle = Automatic;
+					};
 					DFF2A3531D5B935D003493C6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3BVQ3MVDQR;
@@ -262,12 +331,20 @@
 			targets = (
 				DF30027F1D14520E00E5233E /* P3UIKit */,
 				DFF2A3531D5B935D003493C6 /* P3UIKitTV */,
+				DF5342521ECBA9AC00E83B55 /* P3UIKitMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DF30027E1D14520E00E5233E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5342511ECBA9AC00E83B55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,6 +377,25 @@
 				DF75630F1E00B3F10026252D /* HexColorConvertible.swift in Sources */,
 				DF7563101E00B3F10026252D /* ColorConvertible.swift in Sources */,
 				DF7563111E00B3F10026252D /* ImageNameConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF53424E1ECBA9AC00E83B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF53425C1ECBA9DA00E83B55 /* P3NetworkActivityObserver.swift in Sources */,
+				DF53425D1ECBA9DA00E83B55 /* P3AlertOperation.swift in Sources */,
+				DF53425E1ECBA9DA00E83B55 /* UIImage.swift in Sources */,
+				DF53425F1ECBA9DA00E83B55 /* UIColor.swift in Sources */,
+				DF5342601ECBA9DA00E83B55 /* UIImageView.swift in Sources */,
+				DF5342611ECBA9DA00E83B55 /* UICollectionView.swift in Sources */,
+				DF5342621ECBA9DA00E83B55 /* UITableView.swift in Sources */,
+				DF5342631ECBA9DA00E83B55 /* UIView.swift in Sources */,
+				DF5342641ECBA9DA00E83B55 /* ImageConvertible.swift in Sources */,
+				DF5342651ECBA9DA00E83B55 /* HexColorConvertible.swift in Sources */,
+				DF5342661ECBA9DA00E83B55 /* ColorConvertible.swift in Sources */,
+				DF5342671ECBA9DA00E83B55 /* ImageNameConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +571,64 @@
 			};
 			name = Release;
 		};
+		DF5342581ECBA9AC00E83B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BVQ3MVDQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = P3UIKitMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = net.pacific3.P3UIKitMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DF5342591ECBA9AC00E83B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3BVQ3MVDQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = P3UIKitMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = net.pacific3.P3UIKitMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		DFF2A3591D5B935D003493C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,7 +643,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = P3UIKitTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -518,7 +671,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = P3UIKitTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -553,6 +705,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DF53425A1ECBA9AC00E83B55 /* Build configuration list for PBXNativeTarget "P3UIKitMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5342581ECBA9AC00E83B55 /* Debug */,
+				DF5342591ECBA9AC00E83B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		DFF2A35B1D5B935D003493C6 /* Build configuration list for PBXNativeTarget "P3UIKitTV" */ = {
 			isa = XCConfigurationList;

@@ -6,8 +6,14 @@
 //  Copyright © 2017 Pacific3. All rights reserved.
 //
 
-public extension UIView {
-    public func p3_constraintsForFillingView(view: UIView) -> [NSLayoutConstraint] {
+#if os(iOS) || os(tvOS)
+    public typealias P3View = UIView
+#else
+    public typealias P3View = NSView
+#endif
+
+public extension P3View {
+    public func p3_constraintsForFillingView(view: P3View) -> [NSLayoutConstraint] {
         return [
             topAnchor.constraint(equalTo: view.topAnchor),
             leadingAnchor.constraint(equalTo: view.leadingAnchor),
