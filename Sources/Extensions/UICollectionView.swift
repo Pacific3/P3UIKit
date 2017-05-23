@@ -13,7 +13,11 @@
         }
         
         public func dequeue<T: UICollectionViewCell>(for indexPath: IndexPath, type: T.Type) -> T {
-            return dequeueReusableCell(withReuseIdentifier: UICollectionView.reuseIdentifier(class: type), for: indexPath) as! T
+            guard let c = dequeueReusableCell(withReuseIdentifier: UICollectionView.reuseIdentifier(class: type), for: indexPath) as? T else {
+                fatalError("Cell \(String(describing: type)) not configured correctly for reuse.")
+            }
+            
+            return c
         }
         
         private static func reuseIdentifier<T: UICollectionViewCell>(class _class: T.Type) -> String {
