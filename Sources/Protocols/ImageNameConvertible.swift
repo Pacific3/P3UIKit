@@ -7,7 +7,11 @@
 //
 
 public protocol ImageNameConvertible: Hashable {
+    #if os(iOS) || os(tvOS)
     var imageName: String { get }
+#else
+    var imageName: NSImage.Name { get }
+#endif
     var bundle: Bundle { get }
 }
 
