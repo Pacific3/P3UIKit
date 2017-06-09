@@ -79,7 +79,7 @@ private class NetworkIndicatorManager {
 private class Timer {
     var isCancelled = false
     
-    init(interval: TimeInterval, handler: @escaping (Void) -> Void) {
+    init(interval: TimeInterval, handler: @escaping () -> Void) {
         let when = DispatchTime.now() + interval
         DispatchQueue.main.asyncAfter(deadline: when) { [weak self] in
             if self?.isCancelled == false {
