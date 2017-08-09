@@ -34,7 +34,7 @@ public extension P3Color {
             
             if hex.hasPrefix("#") {
                 let index   = hex.index(after: hex.startIndex)
-                let hex     = hex.substring(from: index)
+                let hex     = "\(hex[index...])"
                 let scanner = Scanner(string: hex)
                 var hexValue: CUnsignedLongLong = 0
                 if scanner.scanHexInt64(&hexValue) {
