@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2CBFB3EB220933CB00BB233B /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBFB3EA220933CB00BB233B /* P3Foundation.framework */; };
 		2CBFB3ED220933CE00BB233B /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBFB3EC220933CE00BB233B /* P3Foundation.framework */; };
+		2CBFB3F32209358C00BB233B /* P3Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBFB3F22209358C00BB233B /* P3Foundation.framework */; };
 		DF4F24921EBE7A0A00AB8FA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */; };
 		DF4F24931EBE7A1F00AB8FA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */; };
 		DF5342571ECBA9AC00E83B55 /* P3UIKitMac.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5342551ECBA9AC00E83B55 /* P3UIKitMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +56,7 @@
 		2CBFB3E8220933C600BB233B /* P3Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = P3Foundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBFB3EA220933CB00BB233B /* P3Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = P3Foundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBFB3EC220933CE00BB233B /* P3Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = P3Foundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBFB3F22209358C00BB233B /* P3Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = P3Foundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3002801D14520E00E5233E /* P3UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4F24911EBE7A0A00AB8FA7 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		DF5342531ECBA9AC00E83B55 /* P3UIKitMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = P3UIKitMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBFB3F32209358C00BB233B /* P3Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +188,7 @@
 		DF6614161D1461FC00BCD6AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CBFB3F22209358C00BB233B /* P3Foundation.framework */,
 				2CBFB3EC220933CE00BB233B /* P3Foundation.framework */,
 				2CBFB3EA220933CB00BB233B /* P3Foundation.framework */,
 				2CBFB3E8220933C600BB233B /* P3Foundation.framework */,
@@ -604,7 +608,7 @@
 				INFOPLIST_FILE = P3UIKitMac/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = net.pacific3.P3UIKitMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -629,7 +633,7 @@
 				INFOPLIST_FILE = P3UIKitMac/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = net.pacific3.P3UIKitMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
