@@ -8,11 +8,11 @@
 
 #if os(iOS) || os(tvOS)
     public extension UITableView {
-        public func register<T: UITableViewCell>(cellClass: T.Type) {
+        func register<T: UITableViewCell>(cellClass: T.Type) {
             register(cellClass, forCellReuseIdentifier: UITableView.reuseIdentifier(class: cellClass))
         }
         
-        public func dequeue<T: UITableViewCell>(for indexPath: IndexPath, type: T.Type) -> T {
+        func dequeue<T: UITableViewCell>(for indexPath: IndexPath, type: T.Type) -> T {
             guard let c = dequeueReusableCell(withIdentifier: UITableView.reuseIdentifier(class: type), for: indexPath) as? T else {
                 fatalError("Cell \(String(describing: type)) not configured correctly for reuse.")
             }
@@ -31,7 +31,7 @@
             let headerWidth = headerView.bounds.size.width;
             let temporaryWidthConstraints = NSLayoutConstraint.constraints(
                 withVisualFormat: "[headerView(width)]",
-                options: NSLayoutFormatOptions(rawValue: UInt(0)),
+                options: NSLayoutConstraint.FormatOptions(rawValue: UInt(0)),
                 metrics: ["width": headerWidth],
                 views: ["headerView": headerView]
             )
@@ -40,8 +40,8 @@
             
             headerView.setNeedsLayout()
             headerView.layoutIfNeeded()
-            
-            let headerSize = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+
+            let headerSize = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
             let height = headerSize.height
             var frame = headerView.frame
             

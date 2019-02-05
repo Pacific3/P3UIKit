@@ -15,11 +15,11 @@
 public extension P3Color {
     private static var _colorCache: [String:P3Color] = [:]
     
-    public class func p3_fromHexColorConvertible<C: HexColorConvertible>(hexColorConvertible: C) -> P3Color {
+    class func p3_fromHexColorConvertible<C: HexColorConvertible>(hexColorConvertible: C) -> P3Color {
         return P3Color(p3_hex: hexColorConvertible.hexColor)
     }
     
-    public convenience init(p3_hex hex: String) {
+    convenience init(p3_hex hex: String) {
         if let c = P3Color._colorCache[hex] {
             #if os(iOS) || os(tvOS)
                 self.init(cgColor: c.cgColor)

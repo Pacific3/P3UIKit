@@ -11,7 +11,7 @@ public protocol ColorConvertible: HexColorConvertible {
 }
 
 public extension ColorConvertible {
-    public func color() -> P3Color {
+    func color() -> P3Color {
         return P3Color.p3_fromHexColorConvertible(hexColorConvertible: self)
     }
 }

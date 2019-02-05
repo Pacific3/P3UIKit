@@ -14,7 +14,7 @@
 
 
 public extension P3Image {
-    public class func p3_fromImageNameConvertible<I: ImageNameConvertible>(imageNameConvertible: I) -> P3Image? {
+    class func p3_fromImageNameConvertible<I: ImageNameConvertible>(imageNameConvertible: I) -> P3Image? {
         #if os(iOS) || os(tvOS)
             return P3Image(
                 named: imageNameConvertible.imageName,
@@ -33,7 +33,7 @@ public extension P3Image {
 
 #if os(iOS) || os(tvOS)
     public extension P3Image {
-        public class func p3_imageWithColor(color: P3Color) -> P3Image? {
+        class func p3_imageWithColor(color: P3Color) -> P3Image? {
             let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
             UIGraphicsBeginImageContext(rect.size)
             let context = UIGraphicsGetCurrentContext()
@@ -47,11 +47,11 @@ public extension P3Image {
             return image
         }
         
-        public class func p3_imageWithColor<C: ColorConvertible>(color: C) -> P3Image? {
+        class func p3_imageWithColor<C: ColorConvertible>(color: C) -> P3Image? {
             return p3_imageWithColor(color: color.color())
         }
         
-        public class func p3_roundedImageWithColor(color: P3Color, size: CGSize) -> P3Image? {
+        class func p3_roundedImageWithColor(color: P3Color, size: CGSize) -> P3Image? {
             let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
             let circleBezierPath = UIBezierPath(rect: rect)
             
@@ -66,15 +66,15 @@ public extension P3Image {
             return bezierImage
         }
         
-        public class func p3_roundedImageWithColor<C: ColorConvertible>(color: C, size: CGSize) -> P3Image? {
+        class func p3_roundedImageWithColor<C: ColorConvertible>(color: C, size: CGSize) -> P3Image? {
             return p3_roundedImageWithColor(color: color.color(), size: size)
         }
         
-        public class func p3_roundedImageWithColor(color: P3Color) -> P3Image? {
+        class func p3_roundedImageWithColor(color: P3Color) -> P3Image? {
             return p3_roundedImageWithColor(color: color, size: CGSize(width: 1, height: 1))
         }
         
-        public class func p3_roundedImageWithColor<C: ColorConvertible>(color: C) -> P3Image? {
+        class func p3_roundedImageWithColor<C: ColorConvertible>(color: C) -> P3Image? {
             return p3_roundedImageWithColor(color: color, size: CGSize(width: 1, height: 1))
         }
     }

@@ -13,7 +13,7 @@
 #endif
 
 public extension P3View {
-    public func p3_constraintsForFillingView(view: P3View) -> [NSLayoutConstraint] {
+    func p3_constraintsForFillingView(view: P3View) -> [NSLayoutConstraint] {
         return [
             topAnchor.constraint(equalTo: view.topAnchor),
             leadingAnchor.constraint(equalTo: view.leadingAnchor),

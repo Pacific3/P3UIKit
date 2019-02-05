@@ -16,7 +16,7 @@ public protocol ImageNameConvertible: Hashable {
 }
 
 public extension ImageNameConvertible {
-    public var hashValue: Int {
+    var hashValue: Int {
         return imageName.hashValue
     }
 }

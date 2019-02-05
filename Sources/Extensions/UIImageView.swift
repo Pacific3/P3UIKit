@@ -13,7 +13,7 @@
 #endif
 
 public extension P3ImageView {
-    public func p3_setImage<I: ImageConvertible>(image: I) {
+    func p3_setImage<I: ImageConvertible>(image: I) {
         self.image = image.image()
     }
 }

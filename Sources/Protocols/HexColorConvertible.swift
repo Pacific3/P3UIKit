@@ -11,7 +11,7 @@ public protocol HexColorConvertible: Hashable {
 }
 
 public extension HexColorConvertible {
-    public var hashValue: Int {
+    var hashValue: Int {
         return hexColor.hashValue
     }
 }

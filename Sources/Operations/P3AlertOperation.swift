@@ -37,7 +37,7 @@
             addCondition(condition: P3MutuallyExclusiveOperationCondition<UIViewController>())
         }
         
-        public func addAction(title: String, style: UIAlertActionStyle = .default, handler: @escaping (P3AlertOperation) -> Void = { _ in }) {
+        public func addAction(title: String, style: UIAlertAction.Style = .default, handler: @escaping (P3AlertOperation) -> Void = { _ in }) {
             let action = UIAlertAction(title: title, style: style) { [weak self] _ in
                 if let strongSelf = self {
                     handler(strongSelf)

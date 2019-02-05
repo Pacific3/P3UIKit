@@ -8,11 +8,11 @@
 
 #if os(iOS) || os(tvOS)
     public extension UICollectionView {
-        public func register<T: UICollectionViewCell>(cellClass: T.Type) {
+        func register<T: UICollectionViewCell>(cellClass: T.Type) {
             register(cellClass, forCellWithReuseIdentifier: UICollectionView.reuseIdentifier(class: cellClass))
         }
         
-        public func dequeue<T: UICollectionViewCell>(for indexPath: IndexPath, type: T.Type) -> T {
+        func dequeue<T: UICollectionViewCell>(for indexPath: IndexPath, type: T.Type) -> T {
             guard let c = dequeueReusableCell(withReuseIdentifier: UICollectionView.reuseIdentifier(class: type), for: indexPath) as? T else {
                 fatalError("Cell \(String(describing: type)) not configured correctly for reuse.")
             }
